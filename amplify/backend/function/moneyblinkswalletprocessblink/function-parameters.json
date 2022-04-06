@@ -1,0 +1,47 @@
+{
+  "permissions": {
+    "api": {
+      "moneyblinkswallet": [
+        "Query",
+        "Mutation"
+      ]
+    },
+    "storage": {
+      "MBUser:@model(appsync)": [
+        "read",
+        "update"
+      ],
+      "MBContact:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "MBCode:@model(appsync)": [
+        "read",
+        "update"
+      ],
+      "MBCountry:@model(appsync)": [
+        "read"
+      ],
+      "MBPaymentMethod:@model(appsync)": [
+        "read"
+      ],
+      "MBPaymentMethodCountry:@model(appsync)": [
+        "read"
+      ],
+      "MBMyPaymentMethod:@model(appsync)": [
+        "read"
+      ],
+      "MBTransaction:@model(appsync)": [
+        "read",
+        "update"
+      ],
+      "MBFinancialData:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

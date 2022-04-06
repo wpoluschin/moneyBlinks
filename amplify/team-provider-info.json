@@ -1,0 +1,59 @@
+{
+  "pre": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-moneyblinkswallet-pre-125742-authRole",
+      "UnauthRoleArn": "arn:aws:iam::664580151843:role/amplify-moneyblinkswallet-pre-125742-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::664580151843:role/amplify-moneyblinkswallet-pre-125742-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-moneyblinkswallet-pre-125742-deployment",
+      "UnauthRoleName": "amplify-moneyblinkswallet-pre-125742-unauthRole",
+      "StackName": "amplify-moneyblinkswallet-pre-125742",
+      "StackId": "arn:aws:cloudformation:us-east-1:664580151843:stack/amplify-moneyblinkswallet-pre-125742/7efb9d90-c7b1-11eb-a5af-0e6b90c5010d",
+      "AmplifyAppId": "d3on14vpifqorp",
+      "AuthTriggerTemplateURL": ""
+    },
+    "categories": {
+      "auth": {
+        "moneyblinkswallet": {}
+      },
+      "function": {
+        "moneyblinkswallettx": {
+          "deploymentBucketName": "amplify-moneyblinkswallet-pre-125742-deployment",
+          "s3Key": "amplify-builds/moneyblinkswallettx-6d763952533231397842-build.zip"
+        },
+        "moneyblinkswallettopay": {
+          "deploymentBucketName": "amplify-moneyblinkswallet-pre-125742-deployment",
+          "s3Key": "amplify-builds/moneyblinkswallettopay-67386a46303156344732-build.zip"
+        },
+        "moneyblinkswalletpurchaseblinkpack": {
+          "deploymentBucketName": "amplify-moneyblinkswallet-pre-125742-deployment",
+          "s3Key": "amplify-builds/moneyblinkswalletpurchaseblinkpack-37544668757a692f4259-build.zip"
+        },
+        "moneyblinkswalletprocessblink": {
+          "deploymentBucketName": "amplify-moneyblinkswallet-pre-125742-deployment",
+          "s3Key": "amplify-builds/moneyblinkswalletprocessblink-464b73614568766b756b-build.zip"
+        },
+        "moneyblinkswalletusecode": {
+          "deploymentBucketName": "amplify-moneyblinkswallet-pre-125742-deployment",
+          "s3Key": "amplify-builds/moneyblinkswalletusecode-4849657a485168425567-build.zip"
+        },
+        "moneyblinkswalletcheckcode": {
+          "deploymentBucketName": "amplify-moneyblinkswallet-pre-125742-deployment",
+          "s3Key": "amplify-builds/moneyblinkswalletcheckcode-5a6a74326d56476b7a31-build.zip"
+        },
+        "moneyblinkswalletupdowncash": {
+          "deploymentBucketName": "amplify-moneyblinkswallet-pre-125742-deployment",
+          "s3Key": "amplify-builds/moneyblinkswalletupdowncash-76334358353276765079-build.zip"
+        },
+        "moneyblinkswalletrewardsplan": {
+          "deploymentBucketName": "amplify-moneyblinkswallet-pre-125742-deployment",
+          "s3Key": "amplify-builds/moneyblinkswalletrewardsplan-776f774b5a346f634867-build.zip"
+        },
+        "moneyblinkswalletbankec": {
+          "deploymentBucketName": "amplify-moneyblinkswallet-pre-125742-deployment",
+          "s3Key": "amplify-builds/moneyblinkswalletbankec-39773142646e4d667a61-build.zip"
+        }
+      }
+    }
+  }
+}

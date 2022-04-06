@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "api": {
+      "moneyblinkswallet": [
+        "Query",
+        "Mutation"
+      ]
+    },
+    "storage": {
+      "MBUser:@model(appsync)": [
+        "read",
+        "update"
+      ],
+      "MBContact:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "MBCode:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "MBTransaction:@model(appsync)": [
+        "read",
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

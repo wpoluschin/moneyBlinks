@@ -1,0 +1,32 @@
+{
+  "build": {
+    "release": {},
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./pc-api-9105230212071103246-86-a09d2ec061ae.json",
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "ti.support@moneyblinks.com",
+        "ascAppId": "122982544",
+        "appleTeamId": "S3VJ7AHNB7"
+      }
+    }
+  }
+}

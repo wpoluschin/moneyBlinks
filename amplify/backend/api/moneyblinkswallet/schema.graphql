@@ -1,0 +1,442 @@
+enum TxType {
+  SEND,
+  REQUEST,
+  SEND_REQUEST,
+  TX_REJECTED,
+  DOWN_MONEY_CASH,
+  UP_MONEY_CASH
+}
+
+enum CodeType {
+  TX,
+  INVITATION,
+  UP_MONEY_CASH,
+  DOWN_MONEY_CASH
+}
+
+enum PMStatus {
+  ACTIVE,
+  INACTIVE,
+  REMOVE,
+  BLOCKED
+}
+
+enum TxStatus {
+  SEND,
+  REQUEST,
+  STANDBY,
+  SHARED,
+  CONFIRM,
+  DOWNLOAD,
+  REJECT,
+  UP_CASH
+  DOWN_CASH
+}
+
+enum SmsStatus {
+  SEND,
+  QUEUED,
+  FAILED,
+  DEPLOYED,
+  DELIVERY,
+  UNDELIVERY
+}
+
+type MBSettings @model {
+  id: ID!
+  settings: AWSJSON!
+  isActive: Boolean!
+  alpha2Code: String!
+  alpha3Code: String!
+  platform: String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+}
+
+type MBUser @model
+@key(name: "byPhoneNumber", fields: ["phoneNumber", "createdAt"], queryField: "byPhoneNumber")
+@key(name: "byEmail", fields: ["email", "createdAt"], queryField: "byEmail")
+@key(name: "byIdentification", fields: ["identificationNumber", "createdAt"], queryField: "byIdentification")
+@key(name: "byNickname", fields: ["nickname", "createdAt"], queryField: "byNickname")
+@key(name: "listAllUsers", fields: ["type", "fullName"], queryField: "listAllUsers") {
+  id: ID!
+  type: String!
+  cognitoUserId: ID!
+  nickname: String!
+  fullName: String!
+  email: AWSEmail!
+  phoneNumber: String!
+  isAvailabilityTx(value: Boolean = false): Boolean!
+  checkEmail(value: Boolean = false): Boolean!
+  checkPhone(value: Boolean = false): Boolean!
+  locale: String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  isTerms(value: Boolean = true): Boolean!
+  deletedAt: AWSDateTime
+  identificationType: String
+  identificationNumber: String
+  currency(value: String = "USD"): String
+  alpha3Code(value: String = "USA"): String
+  alpha2Code(value: String = "US"): String
+  avatarUrl: String
+  oldAvatarUrl: String
+  identificationUrl: String
+  oldIdentificationUrl: String
+  birthDate: AWSDateTime
+  address: String
+  city: String
+  state: String
+  zipCode: String
+  country: String
+  deviceToken: String
+  isMFA: Boolean
+  isUpdateAccount: Boolean
+  acceptedRequestBlink: Boolean
+  isUsedMoneyBlinkAmount(value: Boolean = true): Boolean
+  acceptedPromotionalInfo: Boolean
+  myPayments: [MBMyPaymentMethod] @connection(keyName: "byPaymentUser", fields: ["id"])
+  myBlinks: [MBBlinkUser] @connection(keyName: "byUserIdBlinks", fields: ["id"])
+}
+
+type MBContact @model
+@key(name: "myShipmentsFrequents", fields: ["invitingID", "myShipments"], queryField: "myShipmentsFrequents")
+@key(name: "myRequestsFrequents", fields: ["invitingID", "myReceipts"], queryField: "myRequestsFrequents")
+{
+  id: ID!
+  invitingID: ID!
+  invitedID: ID!
+  invited: MBUser! @connection(fields: ["invitedID"])
+  isFavorite(value: Boolean = false): Boolean!
+  myShipments(value: Int = 0): Int!
+  myReceipts(value: Int = 0): Int!
+  codeID: ID
+  moneyBlinksCode: MBCode @connection(fields: ["codeID"])
+  code: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+}
+
+type MBCode @model {
+  id: ID!
+  userID: ID!
+  user: MBUser! @connection(fields: ["userID"])
+  code: String!
+  codeType: CodeType!
+  isUsed(value: Boolean = false): Boolean!
+  isUserUsed(value: Boolean = false): Boolean
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+}
+
+type MBCountry @model
+@key(name: "costCenterAlpha3Code", fields: ["alpha3Code"], queryField: "costCenterAlpha3Code")
+@key(name: "costCenterAlpha2Code", fields: ["alpha2Code"], queryField: "costCenterAlpha2Code")
+@key(name: "listByNameOrOrder", fields: ["type", "showOrder"], queryField: "listByNameOrOrder")
+{
+  id: ID!
+  type: String!
+  name: String!
+  translate: AWSJSON!
+  settings: AWSJSON!
+  alpha3Code: String!
+  alpha2Code: String!
+  showOrder: String!
+  isDownload(value: Boolean = true): Boolean!
+  currency(value: String = "USD"): String!
+  isActive(value: Boolean = true): Boolean!
+  countryStateId: ID
+  country: MBCountry @connection(fields: ["countryStateId"])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+  taxes: [MBTaxCountry] @connection(keyName: "listTaxesByCountryId", fields: ["id"])
+  charges: [MBChargeCountry] @connection(keyName: "listChargesByCountryId", fields: ["id"])
+}
+
+type MBPaymentMethod @model
+@key(name: "paymentMethodByCode", fields: ["code", "name"], queryField: "paymentMethodByCode")
+{
+  id: ID!
+  name: String!
+  code: String!
+  translate: AWSJSON!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+  countries: [MBPaymentMethodCountry] @connection(keyName: "byPaymentMethod", fields: ["id"])
+}
+
+type MBPaymentMethodCountry @model
+@key(name: "byPaymentMethod", fields: ["paymentMethodID", "costCenterID", "availableFromAt"], queryField: "byPaymentMethod")
+@key(name: "byCostCenter", fields: ["costCenterID", "paymentMethodID", "availableFromAt"], queryField: "byCostCenter")
+{
+  id: ID!
+  paymentMethodID: ID!
+  costCenterID: ID!
+  paymentMethod: MBPaymentMethod! @connection(fields: ["paymentMethodID"])
+  costCenter: MBCountry! @connection(fields: ["costCenterID"])
+  settings: AWSJSON!
+  isActive(value: Boolean = true): Boolean!
+  paymentTypeCode: String!
+  alpha2Code: String!
+  alpha3Code: String!
+  isReceipt(value: Boolean = true): Boolean!
+  isShipping(value: Boolean = true): Boolean!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  availableFromAt: AWSDate!
+  availableUntilAt: AWSDate
+  users: [MBMyPaymentMethod] @connection(keyName: "myMethodsByCountry", fields: ["id"])
+}
+
+type MBMyPaymentMethod @model
+@key(name: "byPaymentUser", fields: ["userID", "paymentMethodCountryID", "createdAt"], queryField: "byPaymentUser")
+@key(name: "myMethodsByCountry", fields: ["paymentMethodCountryID", "userID", "createdAt"], queryField: "myMethodsByCountry")
+@key(name: "paymentByType", fields: ["payType", "createdAt"], queryField: "paymentByType")
+{
+  id: ID!
+  paymentMethodCountryID: ID!
+  userID: ID!
+  paymentMethodCountry: MBPaymentMethodCountry! @connection(fields: ["paymentMethodCountryID"])
+  user: MBUser! @connection(fields: ["userID"])
+  accountId: String!
+  value: String!
+  label: String!
+  settings: AWSJSON!
+  payType: String!
+  isActive(value: Boolean = true): Boolean!
+  isUsedPayment(value: Boolean = true): Boolean!
+  description: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+}
+
+type MBBlinkSettings @model
+@key(name: "byBlinkCountryId", fields: ["countryID", "isoStateCode"], queryField: "byBlinkCountryId")
+@key(name: "lastBlinkSettings", fields: ["type", "createdAt"], queryField: "lastBlinkSettings") {
+  id: ID!
+  type(value: String = "BlinkSetting"): String!
+  countryID: ID!
+  isoStateCode: String!
+  country: MBCountry! @connection(fields: ["countryID"])
+  blinkCost(value: Float = 3.99): Float!
+  promotionalCount(value: Int = 0): Int!
+  currency(value: String = "USD"): String!
+  settings: AWSJSON!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+  blinksByUser: [MBBlinkUser] @connection(keyName: "byBlinksGetUser", fields: ["id"])
+}
+
+type MBBlinkUser @model
+@key(name: "byUserIdBlinks", fields: ["userID", "blinkSettingID"], queryField: "byUserIdBlinks")
+@key(name: "byBlinksGetUser", fields: ["blinkSettingID", "userID"], queryField: "byBlinksGetUser")
+{
+  id: ID!
+  userID: ID!
+  blinkSettingID: ID!
+  user: MBUser! @connection(fields: ["userID"])
+  blinkSetting: MBBlinkSettings! @connection(fields: ["blinkSettingID"])
+  blinkAcquired(value: Int = 0): Int!
+  blinkAvailable(value: Int = 0): Int!
+  blinkPrice: Float!
+  isPromotional(value: Boolean = false): Boolean!
+  currency(value: String = "USD"): String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+}
+
+type MBPay @model {
+  id: ID!
+  type(value: String = "PAY"): String!
+  amount: Float!
+  currency: String!
+  userID: ID!
+  user: MBUser! @connection(fields: ["userID"])
+  paymentMethodCountry: String!
+  paymentID: ID
+  paymentMethod: MBMyPaymentMethod @connection(fields: ["paymentID"])
+  exchangeAmount: Float
+  exchangeRate: Float
+  exchangeCurrency: String
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+}
+
+type MBTransaction @model
+@key(name: "listAll", fields: ["type", "createdAt"], queryField: "listAll") {
+  id: ID!
+  type(value: String = "TRANSACTION"): String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+  amount(value: Float = 0): Float!
+  currency(value: String = "USD"): String!
+  taxes(value: Float = 0): Float!
+  charges(value: Float = 0): Float!
+  amountDeposit(value: Float = 0): Float!
+  currencyDeposit(value: String = "USD"): String!
+  message: String
+  requestMessage: String
+  txType: TxType!
+  txStatus: TxStatus!
+  shippingID: ID!
+  shipping: MBUser! @connection(fields: ["shippingID"])
+  receiptID: ID
+  receipt: MBUser @connection(fields: ["receiptID"])
+  codeID: ID!
+  moneyBlinksCode: MBCode! @connection(fields: ["codeID"])
+  isConfirm: Boolean!
+  isReceipt: Boolean
+  txValues: AWSJSON!
+  downloads: [MBDownloadBlink] @connection(keyName: "downloadByTx", fields: ["id"])
+}
+
+type MBFinancialData @model {
+  id: ID!
+  type: String!
+  amount: Float!
+  currency: String!
+  blinks: Int!
+  isActive: Boolean!
+  userID: ID!
+  user: MBUser! @connection(fields: ["userID"])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+}
+
+type MBBlinkPay @model
+@key(name: "listAllBlinkPays", fields: ["type", "createdAt"], queryField: "listAllBlinkPays") {
+  id: ID!
+  type(value: String = "BLINK"): String!
+  payID: ID!
+  payment: MBPay! @connection(fields: ["payID"])
+  blinkID: ID!
+  blink: MBBlinkUser! @connection(fields: ["blinkID"])
+  userID: ID!
+  user: MBUser! @connection(fields: ["userID"])
+  createdAt: AWSDateTime!
+}
+
+type MBTransactionPay @model
+@key(name: "listAllTxPays", fields: ["type", "createdAt"], queryField: "listAllTxPays")
+{
+  id: ID!
+  type(value: String = "TX"): String!
+  payID: ID!
+  payment: MBPay! @connection(fields: ["payID"])
+  txID: ID!
+  tx: MBTransaction! @connection(fields: ["txID"])
+  userID: ID!
+  user: MBUser! @connection(fields: ["userID"])
+  createdAt: AWSDateTime!
+}
+
+type Mutation {
+  createTx(values: AWSJSON): AWSJSON @function(name: "moneyblinkswallettx-${env}")
+  createPay(payInput: AWSJSON): AWSJSON @function(name: "moneyblinkswallettopay-${env}")
+  purchasePack(values: AWSJSON): AWSJSON @function(name: "moneyblinkswalletpurchaseblinkpack-${env}")
+  completeTx(values: AWSJSON): AWSJSON @function(name: "moneyblinkswalletprocessblink-${env}")
+  createOrValidateCode(values: AWSJSON): AWSJSON @function(name: "moneyblinkswalletusecode-${env}")
+  validateCode(values: AWSJSON): AWSJSON @function(name: "moneyblinkswalletcheckcode-${env}")
+  upDownCash(values: AWSJSON): AWSJSON @function(name: "moneyblinkswalletupdowncash-${env}")
+  rewardsPlans(values: AWSJSON): AWSJSON @function(name: "moneyblinkswalletrewardsplan-${env}")
+  bankEc: AWSJSON @function(name: "moneyblinkswalletbankec-${env}")
+}
+
+type MBTaxCountry @model
+@key(name: "listTaxesByCountryId", fields: ["countryID", "showOrder"], queryField: "listTaxesByCountryId") {
+  id: ID!
+  countryID: ID!
+  country: MBCountry! @connection(fields: ["countryID"])
+  taxCode: String!
+  translate: AWSJSON!
+  isActive(value: Boolean = true): Boolean!
+  currency(value: String = "USD"): String!
+  showOrder(value: String = "00001"): String!
+  isReceipt(value: Boolean = true): Boolean!
+  isBlinkPay(value: Boolean = true): Boolean!
+  isShipping(value: Boolean = true): Boolean!
+  total(value: Float = 0): Float!
+  settings: AWSJSON!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+}
+
+type MBChargeCountry @model
+@key(name: "listChargesByCountryId", fields: ["countryID", "showOrder"], queryField: "listChargesByCountryId") {
+  id: ID!
+  countryID: ID!
+  country: MBCountry! @connection(fields: ["countryID"])
+  chargeCode: String!
+  translate: AWSJSON!
+  isActive(value: Boolean = true): Boolean!
+  currency(value: String = "USD"): String!
+  showOrder(value: String = "00001"): String!
+  isReceipt(value: Boolean = true): Boolean!
+  isBlinkPay(value: Boolean = true): Boolean!
+  isShipping(value: Boolean = true): Boolean!
+  total(value: Float = 0): Float!
+  settings: AWSJSON!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+}
+
+type MBDownloadBlink @model
+@key(name: "downloadByTx", fields: ["txID", "createdAt"], queryField: "downloadByTx") {
+  id: ID!
+  type: String!
+  txID: ID!
+  tx: MBTransaction @connection(fields: ["txID"])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  deletedAt: AWSDateTime
+  processAt: AWSDateTime
+  paymentMethod: String!
+  paymentMethodId: String!
+  stateCode: String!
+  batchCatch: AWSDateTime
+  userID: ID!
+  user: MBUser! @connection(fields: ["userID"])
+  amount: Float!
+  currency: String!
+}
+
+type MBNotification @model
+@key(name: "listMyNotifications", fields: ["type", "createdAt"], queryField: "listMyNotifications") {
+  id: ID!
+  type(value: String = "NOTIFICATION"): String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  isRead(value: Boolean = false): Boolean!
+  data: AWSJSON!
+  title: String!
+  message: String!
+  userID: ID!
+  user: MBUser! @connection(fields: ["userID"])
+}
+
+type FileUploadBank @model
+@key(name: "listFilesEC", fields: ["fileType", "createdAt"], queryField: "listFilesEC"){
+  id: ID!
+  fileType(value: String = "BANK"): String!
+  type(value: String = "PICHINCHA"): String!
+  fileName: String!
+  location: String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  isDownload: Boolean!
+  processedBy: String
+  processedAt: AWSDateTime
+}

@@ -1,0 +1,3328 @@
+/* tslint:disable */
+/* eslint-disable */
+// this is an auto generated file. This will be overwritten
+
+export const onCreateMBSettings = /* GraphQL */ `
+  subscription OnCreateMBSettings {
+    onCreateMBSettings {
+      id
+      settings
+      isActive
+      alpha2Code
+      alpha3Code
+      platform
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onUpdateMBSettings = /* GraphQL */ `
+  subscription OnUpdateMBSettings {
+    onUpdateMBSettings {
+      id
+      settings
+      isActive
+      alpha2Code
+      alpha3Code
+      platform
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onDeleteMBSettings = /* GraphQL */ `
+  subscription OnDeleteMBSettings {
+    onDeleteMBSettings {
+      id
+      settings
+      isActive
+      alpha2Code
+      alpha3Code
+      platform
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onCreateMBUser = /* GraphQL */ `
+  subscription OnCreateMBUser {
+    onCreateMBUser {
+      id
+      type
+      cognitoUserId
+      nickname
+      fullName
+      email
+      phoneNumber
+      isAvailabilityTx
+      checkEmail
+      checkPhone
+      locale
+      createdAt
+      updatedAt
+      isTerms
+      deletedAt
+      identificationType
+      identificationNumber
+      currency
+      alpha3Code
+      alpha2Code
+      avatarUrl
+      oldAvatarUrl
+      identificationUrl
+      oldIdentificationUrl
+      birthDate
+      address
+      city
+      state
+      zipCode
+      country
+      deviceToken
+      isMFA
+      isUpdateAccount
+      acceptedRequestBlink
+      isUsedMoneyBlinkAmount
+      acceptedPromotionalInfo
+      myPayments {
+        nextToken
+      }
+      myBlinks {
+        nextToken
+      }
+    }
+  }
+`;
+export const onUpdateMBUser = /* GraphQL */ `
+  subscription OnUpdateMBUser {
+    onUpdateMBUser {
+      id
+      type
+      cognitoUserId
+      nickname
+      fullName
+      email
+      phoneNumber
+      isAvailabilityTx
+      checkEmail
+      checkPhone
+      locale
+      createdAt
+      updatedAt
+      isTerms
+      deletedAt
+      identificationType
+      identificationNumber
+      currency
+      alpha3Code
+      alpha2Code
+      avatarUrl
+      oldAvatarUrl
+      identificationUrl
+      oldIdentificationUrl
+      birthDate
+      address
+      city
+      state
+      zipCode
+      country
+      deviceToken
+      isMFA
+      isUpdateAccount
+      acceptedRequestBlink
+      isUsedMoneyBlinkAmount
+      acceptedPromotionalInfo
+      myPayments {
+        nextToken
+      }
+      myBlinks {
+        nextToken
+      }
+    }
+  }
+`;
+export const onDeleteMBUser = /* GraphQL */ `
+  subscription OnDeleteMBUser {
+    onDeleteMBUser {
+      id
+      type
+      cognitoUserId
+      nickname
+      fullName
+      email
+      phoneNumber
+      isAvailabilityTx
+      checkEmail
+      checkPhone
+      locale
+      createdAt
+      updatedAt
+      isTerms
+      deletedAt
+      identificationType
+      identificationNumber
+      currency
+      alpha3Code
+      alpha2Code
+      avatarUrl
+      oldAvatarUrl
+      identificationUrl
+      oldIdentificationUrl
+      birthDate
+      address
+      city
+      state
+      zipCode
+      country
+      deviceToken
+      isMFA
+      isUpdateAccount
+      acceptedRequestBlink
+      isUsedMoneyBlinkAmount
+      acceptedPromotionalInfo
+      myPayments {
+        nextToken
+      }
+      myBlinks {
+        nextToken
+      }
+    }
+  }
+`;
+export const onCreateMBContact = /* GraphQL */ `
+  subscription OnCreateMBContact {
+    onCreateMBContact {
+      id
+      invitingID
+      invitedID
+      invited {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      isFavorite
+      myShipments
+      myReceipts
+      codeID
+      moneyBlinksCode {
+        id
+        userID
+        code
+        codeType
+        isUsed
+        isUserUsed
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      code
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onUpdateMBContact = /* GraphQL */ `
+  subscription OnUpdateMBContact {
+    onUpdateMBContact {
+      id
+      invitingID
+      invitedID
+      invited {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      isFavorite
+      myShipments
+      myReceipts
+      codeID
+      moneyBlinksCode {
+        id
+        userID
+        code
+        codeType
+        isUsed
+        isUserUsed
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      code
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onDeleteMBContact = /* GraphQL */ `
+  subscription OnDeleteMBContact {
+    onDeleteMBContact {
+      id
+      invitingID
+      invitedID
+      invited {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      isFavorite
+      myShipments
+      myReceipts
+      codeID
+      moneyBlinksCode {
+        id
+        userID
+        code
+        codeType
+        isUsed
+        isUserUsed
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      code
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onCreateMBCode = /* GraphQL */ `
+  subscription OnCreateMBCode {
+    onCreateMBCode {
+      id
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      code
+      codeType
+      isUsed
+      isUserUsed
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onUpdateMBCode = /* GraphQL */ `
+  subscription OnUpdateMBCode {
+    onUpdateMBCode {
+      id
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      code
+      codeType
+      isUsed
+      isUserUsed
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onDeleteMBCode = /* GraphQL */ `
+  subscription OnDeleteMBCode {
+    onDeleteMBCode {
+      id
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      code
+      codeType
+      isUsed
+      isUserUsed
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onCreateMBCountry = /* GraphQL */ `
+  subscription OnCreateMBCountry {
+    onCreateMBCountry {
+      id
+      type
+      name
+      translate
+      settings
+      alpha3Code
+      alpha2Code
+      showOrder
+      isDownload
+      currency
+      isActive
+      countryStateId
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      createdAt
+      updatedAt
+      deletedAt
+      taxes {
+        nextToken
+      }
+      charges {
+        nextToken
+      }
+    }
+  }
+`;
+export const onUpdateMBCountry = /* GraphQL */ `
+  subscription OnUpdateMBCountry {
+    onUpdateMBCountry {
+      id
+      type
+      name
+      translate
+      settings
+      alpha3Code
+      alpha2Code
+      showOrder
+      isDownload
+      currency
+      isActive
+      countryStateId
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      createdAt
+      updatedAt
+      deletedAt
+      taxes {
+        nextToken
+      }
+      charges {
+        nextToken
+      }
+    }
+  }
+`;
+export const onDeleteMBCountry = /* GraphQL */ `
+  subscription OnDeleteMBCountry {
+    onDeleteMBCountry {
+      id
+      type
+      name
+      translate
+      settings
+      alpha3Code
+      alpha2Code
+      showOrder
+      isDownload
+      currency
+      isActive
+      countryStateId
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      createdAt
+      updatedAt
+      deletedAt
+      taxes {
+        nextToken
+      }
+      charges {
+        nextToken
+      }
+    }
+  }
+`;
+export const onCreateMBPaymentMethod = /* GraphQL */ `
+  subscription OnCreateMBPaymentMethod {
+    onCreateMBPaymentMethod {
+      id
+      name
+      code
+      translate
+      createdAt
+      updatedAt
+      deletedAt
+      countries {
+        nextToken
+      }
+    }
+  }
+`;
+export const onUpdateMBPaymentMethod = /* GraphQL */ `
+  subscription OnUpdateMBPaymentMethod {
+    onUpdateMBPaymentMethod {
+      id
+      name
+      code
+      translate
+      createdAt
+      updatedAt
+      deletedAt
+      countries {
+        nextToken
+      }
+    }
+  }
+`;
+export const onDeleteMBPaymentMethod = /* GraphQL */ `
+  subscription OnDeleteMBPaymentMethod {
+    onDeleteMBPaymentMethod {
+      id
+      name
+      code
+      translate
+      createdAt
+      updatedAt
+      deletedAt
+      countries {
+        nextToken
+      }
+    }
+  }
+`;
+export const onCreateMBPaymentMethodCountry = /* GraphQL */ `
+  subscription OnCreateMBPaymentMethodCountry {
+    onCreateMBPaymentMethodCountry {
+      id
+      paymentMethodID
+      costCenterID
+      paymentMethod {
+        id
+        name
+        code
+        translate
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      costCenter {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      settings
+      isActive
+      paymentTypeCode
+      alpha2Code
+      alpha3Code
+      isReceipt
+      isShipping
+      createdAt
+      updatedAt
+      availableFromAt
+      availableUntilAt
+      users {
+        nextToken
+      }
+    }
+  }
+`;
+export const onUpdateMBPaymentMethodCountry = /* GraphQL */ `
+  subscription OnUpdateMBPaymentMethodCountry {
+    onUpdateMBPaymentMethodCountry {
+      id
+      paymentMethodID
+      costCenterID
+      paymentMethod {
+        id
+        name
+        code
+        translate
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      costCenter {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      settings
+      isActive
+      paymentTypeCode
+      alpha2Code
+      alpha3Code
+      isReceipt
+      isShipping
+      createdAt
+      updatedAt
+      availableFromAt
+      availableUntilAt
+      users {
+        nextToken
+      }
+    }
+  }
+`;
+export const onDeleteMBPaymentMethodCountry = /* GraphQL */ `
+  subscription OnDeleteMBPaymentMethodCountry {
+    onDeleteMBPaymentMethodCountry {
+      id
+      paymentMethodID
+      costCenterID
+      paymentMethod {
+        id
+        name
+        code
+        translate
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      costCenter {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      settings
+      isActive
+      paymentTypeCode
+      alpha2Code
+      alpha3Code
+      isReceipt
+      isShipping
+      createdAt
+      updatedAt
+      availableFromAt
+      availableUntilAt
+      users {
+        nextToken
+      }
+    }
+  }
+`;
+export const onCreateMBMyPaymentMethod = /* GraphQL */ `
+  subscription OnCreateMBMyPaymentMethod {
+    onCreateMBMyPaymentMethod {
+      id
+      paymentMethodCountryID
+      userID
+      paymentMethodCountry {
+        id
+        paymentMethodID
+        costCenterID
+        settings
+        isActive
+        paymentTypeCode
+        alpha2Code
+        alpha3Code
+        isReceipt
+        isShipping
+        createdAt
+        updatedAt
+        availableFromAt
+        availableUntilAt
+      }
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      accountId
+      value
+      label
+      settings
+      payType
+      isActive
+      isUsedPayment
+      description
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onUpdateMBMyPaymentMethod = /* GraphQL */ `
+  subscription OnUpdateMBMyPaymentMethod {
+    onUpdateMBMyPaymentMethod {
+      id
+      paymentMethodCountryID
+      userID
+      paymentMethodCountry {
+        id
+        paymentMethodID
+        costCenterID
+        settings
+        isActive
+        paymentTypeCode
+        alpha2Code
+        alpha3Code
+        isReceipt
+        isShipping
+        createdAt
+        updatedAt
+        availableFromAt
+        availableUntilAt
+      }
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      accountId
+      value
+      label
+      settings
+      payType
+      isActive
+      isUsedPayment
+      description
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onDeleteMBMyPaymentMethod = /* GraphQL */ `
+  subscription OnDeleteMBMyPaymentMethod {
+    onDeleteMBMyPaymentMethod {
+      id
+      paymentMethodCountryID
+      userID
+      paymentMethodCountry {
+        id
+        paymentMethodID
+        costCenterID
+        settings
+        isActive
+        paymentTypeCode
+        alpha2Code
+        alpha3Code
+        isReceipt
+        isShipping
+        createdAt
+        updatedAt
+        availableFromAt
+        availableUntilAt
+      }
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      accountId
+      value
+      label
+      settings
+      payType
+      isActive
+      isUsedPayment
+      description
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onCreateMBBlinkSettings = /* GraphQL */ `
+  subscription OnCreateMBBlinkSettings {
+    onCreateMBBlinkSettings {
+      id
+      type
+      countryID
+      isoStateCode
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      blinkCost
+      promotionalCount
+      currency
+      settings
+      createdAt
+      updatedAt
+      deletedAt
+      blinksByUser {
+        nextToken
+      }
+    }
+  }
+`;
+export const onUpdateMBBlinkSettings = /* GraphQL */ `
+  subscription OnUpdateMBBlinkSettings {
+    onUpdateMBBlinkSettings {
+      id
+      type
+      countryID
+      isoStateCode
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      blinkCost
+      promotionalCount
+      currency
+      settings
+      createdAt
+      updatedAt
+      deletedAt
+      blinksByUser {
+        nextToken
+      }
+    }
+  }
+`;
+export const onDeleteMBBlinkSettings = /* GraphQL */ `
+  subscription OnDeleteMBBlinkSettings {
+    onDeleteMBBlinkSettings {
+      id
+      type
+      countryID
+      isoStateCode
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      blinkCost
+      promotionalCount
+      currency
+      settings
+      createdAt
+      updatedAt
+      deletedAt
+      blinksByUser {
+        nextToken
+      }
+    }
+  }
+`;
+export const onCreateMBBlinkUser = /* GraphQL */ `
+  subscription OnCreateMBBlinkUser {
+    onCreateMBBlinkUser {
+      id
+      userID
+      blinkSettingID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      blinkSetting {
+        id
+        type
+        countryID
+        isoStateCode
+        blinkCost
+        promotionalCount
+        currency
+        settings
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      blinkAcquired
+      blinkAvailable
+      blinkPrice
+      isPromotional
+      currency
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onUpdateMBBlinkUser = /* GraphQL */ `
+  subscription OnUpdateMBBlinkUser {
+    onUpdateMBBlinkUser {
+      id
+      userID
+      blinkSettingID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      blinkSetting {
+        id
+        type
+        countryID
+        isoStateCode
+        blinkCost
+        promotionalCount
+        currency
+        settings
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      blinkAcquired
+      blinkAvailable
+      blinkPrice
+      isPromotional
+      currency
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onDeleteMBBlinkUser = /* GraphQL */ `
+  subscription OnDeleteMBBlinkUser {
+    onDeleteMBBlinkUser {
+      id
+      userID
+      blinkSettingID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      blinkSetting {
+        id
+        type
+        countryID
+        isoStateCode
+        blinkCost
+        promotionalCount
+        currency
+        settings
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      blinkAcquired
+      blinkAvailable
+      blinkPrice
+      isPromotional
+      currency
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onCreateMBPay = /* GraphQL */ `
+  subscription OnCreateMBPay {
+    onCreateMBPay {
+      id
+      type
+      amount
+      currency
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      paymentMethodCountry
+      paymentID
+      paymentMethod {
+        id
+        paymentMethodCountryID
+        userID
+        accountId
+        value
+        label
+        settings
+        payType
+        isActive
+        isUsedPayment
+        description
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      exchangeAmount
+      exchangeRate
+      exchangeCurrency
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onUpdateMBPay = /* GraphQL */ `
+  subscription OnUpdateMBPay {
+    onUpdateMBPay {
+      id
+      type
+      amount
+      currency
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      paymentMethodCountry
+      paymentID
+      paymentMethod {
+        id
+        paymentMethodCountryID
+        userID
+        accountId
+        value
+        label
+        settings
+        payType
+        isActive
+        isUsedPayment
+        description
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      exchangeAmount
+      exchangeRate
+      exchangeCurrency
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onDeleteMBPay = /* GraphQL */ `
+  subscription OnDeleteMBPay {
+    onDeleteMBPay {
+      id
+      type
+      amount
+      currency
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      paymentMethodCountry
+      paymentID
+      paymentMethod {
+        id
+        paymentMethodCountryID
+        userID
+        accountId
+        value
+        label
+        settings
+        payType
+        isActive
+        isUsedPayment
+        description
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      exchangeAmount
+      exchangeRate
+      exchangeCurrency
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onCreateMBTransaction = /* GraphQL */ `
+  subscription OnCreateMBTransaction {
+    onCreateMBTransaction {
+      id
+      type
+      createdAt
+      updatedAt
+      deletedAt
+      amount
+      currency
+      taxes
+      charges
+      amountDeposit
+      currencyDeposit
+      message
+      requestMessage
+      txType
+      txStatus
+      shippingID
+      shipping {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      receiptID
+      receipt {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      codeID
+      moneyBlinksCode {
+        id
+        userID
+        code
+        codeType
+        isUsed
+        isUserUsed
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      isConfirm
+      isReceipt
+      txValues
+      downloads {
+        nextToken
+      }
+    }
+  }
+`;
+export const onUpdateMBTransaction = /* GraphQL */ `
+  subscription OnUpdateMBTransaction {
+    onUpdateMBTransaction {
+      id
+      type
+      createdAt
+      updatedAt
+      deletedAt
+      amount
+      currency
+      taxes
+      charges
+      amountDeposit
+      currencyDeposit
+      message
+      requestMessage
+      txType
+      txStatus
+      shippingID
+      shipping {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      receiptID
+      receipt {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      codeID
+      moneyBlinksCode {
+        id
+        userID
+        code
+        codeType
+        isUsed
+        isUserUsed
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      isConfirm
+      isReceipt
+      txValues
+      downloads {
+        nextToken
+      }
+    }
+  }
+`;
+export const onDeleteMBTransaction = /* GraphQL */ `
+  subscription OnDeleteMBTransaction {
+    onDeleteMBTransaction {
+      id
+      type
+      createdAt
+      updatedAt
+      deletedAt
+      amount
+      currency
+      taxes
+      charges
+      amountDeposit
+      currencyDeposit
+      message
+      requestMessage
+      txType
+      txStatus
+      shippingID
+      shipping {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      receiptID
+      receipt {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      codeID
+      moneyBlinksCode {
+        id
+        userID
+        code
+        codeType
+        isUsed
+        isUserUsed
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      isConfirm
+      isReceipt
+      txValues
+      downloads {
+        nextToken
+      }
+    }
+  }
+`;
+export const onCreateMBFinancialData = /* GraphQL */ `
+  subscription OnCreateMBFinancialData {
+    onCreateMBFinancialData {
+      id
+      type
+      amount
+      currency
+      blinks
+      isActive
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onUpdateMBFinancialData = /* GraphQL */ `
+  subscription OnUpdateMBFinancialData {
+    onUpdateMBFinancialData {
+      id
+      type
+      amount
+      currency
+      blinks
+      isActive
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onDeleteMBFinancialData = /* GraphQL */ `
+  subscription OnDeleteMBFinancialData {
+    onDeleteMBFinancialData {
+      id
+      type
+      amount
+      currency
+      blinks
+      isActive
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onCreateMBBlinkPay = /* GraphQL */ `
+  subscription OnCreateMBBlinkPay {
+    onCreateMBBlinkPay {
+      id
+      type
+      payID
+      payment {
+        id
+        type
+        amount
+        currency
+        userID
+        paymentMethodCountry
+        paymentID
+        exchangeAmount
+        exchangeRate
+        exchangeCurrency
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      blinkID
+      blink {
+        id
+        userID
+        blinkSettingID
+        blinkAcquired
+        blinkAvailable
+        blinkPrice
+        isPromotional
+        currency
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateMBBlinkPay = /* GraphQL */ `
+  subscription OnUpdateMBBlinkPay {
+    onUpdateMBBlinkPay {
+      id
+      type
+      payID
+      payment {
+        id
+        type
+        amount
+        currency
+        userID
+        paymentMethodCountry
+        paymentID
+        exchangeAmount
+        exchangeRate
+        exchangeCurrency
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      blinkID
+      blink {
+        id
+        userID
+        blinkSettingID
+        blinkAcquired
+        blinkAvailable
+        blinkPrice
+        isPromotional
+        currency
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteMBBlinkPay = /* GraphQL */ `
+  subscription OnDeleteMBBlinkPay {
+    onDeleteMBBlinkPay {
+      id
+      type
+      payID
+      payment {
+        id
+        type
+        amount
+        currency
+        userID
+        paymentMethodCountry
+        paymentID
+        exchangeAmount
+        exchangeRate
+        exchangeCurrency
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      blinkID
+      blink {
+        id
+        userID
+        blinkSettingID
+        blinkAcquired
+        blinkAvailable
+        blinkPrice
+        isPromotional
+        currency
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateMBTransactionPay = /* GraphQL */ `
+  subscription OnCreateMBTransactionPay {
+    onCreateMBTransactionPay {
+      id
+      type
+      payID
+      payment {
+        id
+        type
+        amount
+        currency
+        userID
+        paymentMethodCountry
+        paymentID
+        exchangeAmount
+        exchangeRate
+        exchangeCurrency
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      txID
+      tx {
+        id
+        type
+        createdAt
+        updatedAt
+        deletedAt
+        amount
+        currency
+        taxes
+        charges
+        amountDeposit
+        currencyDeposit
+        message
+        requestMessage
+        txType
+        txStatus
+        shippingID
+        receiptID
+        codeID
+        isConfirm
+        isReceipt
+        txValues
+      }
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateMBTransactionPay = /* GraphQL */ `
+  subscription OnUpdateMBTransactionPay {
+    onUpdateMBTransactionPay {
+      id
+      type
+      payID
+      payment {
+        id
+        type
+        amount
+        currency
+        userID
+        paymentMethodCountry
+        paymentID
+        exchangeAmount
+        exchangeRate
+        exchangeCurrency
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      txID
+      tx {
+        id
+        type
+        createdAt
+        updatedAt
+        deletedAt
+        amount
+        currency
+        taxes
+        charges
+        amountDeposit
+        currencyDeposit
+        message
+        requestMessage
+        txType
+        txStatus
+        shippingID
+        receiptID
+        codeID
+        isConfirm
+        isReceipt
+        txValues
+      }
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteMBTransactionPay = /* GraphQL */ `
+  subscription OnDeleteMBTransactionPay {
+    onDeleteMBTransactionPay {
+      id
+      type
+      payID
+      payment {
+        id
+        type
+        amount
+        currency
+        userID
+        paymentMethodCountry
+        paymentID
+        exchangeAmount
+        exchangeRate
+        exchangeCurrency
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      txID
+      tx {
+        id
+        type
+        createdAt
+        updatedAt
+        deletedAt
+        amount
+        currency
+        taxes
+        charges
+        amountDeposit
+        currencyDeposit
+        message
+        requestMessage
+        txType
+        txStatus
+        shippingID
+        receiptID
+        codeID
+        isConfirm
+        isReceipt
+        txValues
+      }
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateMBTaxCountry = /* GraphQL */ `
+  subscription OnCreateMBTaxCountry {
+    onCreateMBTaxCountry {
+      id
+      countryID
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      taxCode
+      translate
+      isActive
+      currency
+      showOrder
+      isReceipt
+      isBlinkPay
+      isShipping
+      total
+      settings
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onUpdateMBTaxCountry = /* GraphQL */ `
+  subscription OnUpdateMBTaxCountry {
+    onUpdateMBTaxCountry {
+      id
+      countryID
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      taxCode
+      translate
+      isActive
+      currency
+      showOrder
+      isReceipt
+      isBlinkPay
+      isShipping
+      total
+      settings
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onDeleteMBTaxCountry = /* GraphQL */ `
+  subscription OnDeleteMBTaxCountry {
+    onDeleteMBTaxCountry {
+      id
+      countryID
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      taxCode
+      translate
+      isActive
+      currency
+      showOrder
+      isReceipt
+      isBlinkPay
+      isShipping
+      total
+      settings
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onCreateMBChargeCountry = /* GraphQL */ `
+  subscription OnCreateMBChargeCountry {
+    onCreateMBChargeCountry {
+      id
+      countryID
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      chargeCode
+      translate
+      isActive
+      currency
+      showOrder
+      isReceipt
+      isBlinkPay
+      isShipping
+      total
+      settings
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onUpdateMBChargeCountry = /* GraphQL */ `
+  subscription OnUpdateMBChargeCountry {
+    onUpdateMBChargeCountry {
+      id
+      countryID
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      chargeCode
+      translate
+      isActive
+      currency
+      showOrder
+      isReceipt
+      isBlinkPay
+      isShipping
+      total
+      settings
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onDeleteMBChargeCountry = /* GraphQL */ `
+  subscription OnDeleteMBChargeCountry {
+    onDeleteMBChargeCountry {
+      id
+      countryID
+      country {
+        id
+        type
+        name
+        translate
+        settings
+        alpha3Code
+        alpha2Code
+        showOrder
+        isDownload
+        currency
+        isActive
+        countryStateId
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      chargeCode
+      translate
+      isActive
+      currency
+      showOrder
+      isReceipt
+      isBlinkPay
+      isShipping
+      total
+      settings
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onCreateMBDownloadBlink = /* GraphQL */ `
+  subscription OnCreateMBDownloadBlink {
+    onCreateMBDownloadBlink {
+      id
+      type
+      txID
+      tx {
+        id
+        type
+        createdAt
+        updatedAt
+        deletedAt
+        amount
+        currency
+        taxes
+        charges
+        amountDeposit
+        currencyDeposit
+        message
+        requestMessage
+        txType
+        txStatus
+        shippingID
+        receiptID
+        codeID
+        isConfirm
+        isReceipt
+        txValues
+      }
+      createdAt
+      updatedAt
+      deletedAt
+      processAt
+      paymentMethod
+      paymentMethodId
+      stateCode
+      batchCatch
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      amount
+      currency
+    }
+  }
+`;
+export const onUpdateMBDownloadBlink = /* GraphQL */ `
+  subscription OnUpdateMBDownloadBlink {
+    onUpdateMBDownloadBlink {
+      id
+      type
+      txID
+      tx {
+        id
+        type
+        createdAt
+        updatedAt
+        deletedAt
+        amount
+        currency
+        taxes
+        charges
+        amountDeposit
+        currencyDeposit
+        message
+        requestMessage
+        txType
+        txStatus
+        shippingID
+        receiptID
+        codeID
+        isConfirm
+        isReceipt
+        txValues
+      }
+      createdAt
+      updatedAt
+      deletedAt
+      processAt
+      paymentMethod
+      paymentMethodId
+      stateCode
+      batchCatch
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      amount
+      currency
+    }
+  }
+`;
+export const onDeleteMBDownloadBlink = /* GraphQL */ `
+  subscription OnDeleteMBDownloadBlink {
+    onDeleteMBDownloadBlink {
+      id
+      type
+      txID
+      tx {
+        id
+        type
+        createdAt
+        updatedAt
+        deletedAt
+        amount
+        currency
+        taxes
+        charges
+        amountDeposit
+        currencyDeposit
+        message
+        requestMessage
+        txType
+        txStatus
+        shippingID
+        receiptID
+        codeID
+        isConfirm
+        isReceipt
+        txValues
+      }
+      createdAt
+      updatedAt
+      deletedAt
+      processAt
+      paymentMethod
+      paymentMethodId
+      stateCode
+      batchCatch
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+      amount
+      currency
+    }
+  }
+`;
+export const onCreateMBNotification = /* GraphQL */ `
+  subscription OnCreateMBNotification {
+    onCreateMBNotification {
+      id
+      type
+      createdAt
+      updatedAt
+      isRead
+      data
+      title
+      message
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+    }
+  }
+`;
+export const onUpdateMBNotification = /* GraphQL */ `
+  subscription OnUpdateMBNotification {
+    onUpdateMBNotification {
+      id
+      type
+      createdAt
+      updatedAt
+      isRead
+      data
+      title
+      message
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+    }
+  }
+`;
+export const onDeleteMBNotification = /* GraphQL */ `
+  subscription OnDeleteMBNotification {
+    onDeleteMBNotification {
+      id
+      type
+      createdAt
+      updatedAt
+      isRead
+      data
+      title
+      message
+      userID
+      user {
+        id
+        type
+        cognitoUserId
+        nickname
+        fullName
+        email
+        phoneNumber
+        isAvailabilityTx
+        checkEmail
+        checkPhone
+        locale
+        createdAt
+        updatedAt
+        isTerms
+        deletedAt
+        identificationType
+        identificationNumber
+        currency
+        alpha3Code
+        alpha2Code
+        avatarUrl
+        oldAvatarUrl
+        identificationUrl
+        oldIdentificationUrl
+        birthDate
+        address
+        city
+        state
+        zipCode
+        country
+        deviceToken
+        isMFA
+        isUpdateAccount
+        acceptedRequestBlink
+        isUsedMoneyBlinkAmount
+        acceptedPromotionalInfo
+      }
+    }
+  }
+`;
+export const onCreateFileUploadBank = /* GraphQL */ `
+  subscription OnCreateFileUploadBank {
+    onCreateFileUploadBank {
+      id
+      fileType
+      type
+      fileName
+      location
+      createdAt
+      updatedAt
+      isDownload
+      processedBy
+      processedAt
+    }
+  }
+`;
+export const onUpdateFileUploadBank = /* GraphQL */ `
+  subscription OnUpdateFileUploadBank {
+    onUpdateFileUploadBank {
+      id
+      fileType
+      type
+      fileName
+      location
+      createdAt
+      updatedAt
+      isDownload
+      processedBy
+      processedAt
+    }
+  }
+`;
+export const onDeleteFileUploadBank = /* GraphQL */ `
+  subscription OnDeleteFileUploadBank {
+    onDeleteFileUploadBank {
+      id
+      fileType
+      type
+      fileName
+      location
+      createdAt
+      updatedAt
+      isDownload
+      processedBy
+      processedAt
+    }
+  }
+`;

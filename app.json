@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "MoneyBlinks Wallet",
+    "slug": "money-blinks-wallet",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "owner": "moneyblinks01",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*",
+      "./assets/**/*",
+      "./assets/images/**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.moneyblinks.WalletApp",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "buildNumber": "1.0.1",
+      "config": {
+        "googleMapsApiKey": "AIzaSyBoU4Q6s5MTgk8PbzmWxKF3EXgst6Z8298"
+      },
+      "infoPlist": {
+        "NSCameraUsageDescription": "The device’s camera and/or picture gallery service consumption is intended to have images of the following:\n\t\n- Main User’s Profile\n        . User’s profile record photo (required)\n\t. User’s card ID (required)\n\t",
+        "NSPhotoLibraryUsageDescription": "The device’s camera and/or picture gallery service consumption is intended to have images of the following:\n\t\n- Main User’s Profile\n        . User’s profile record photo (required)\n\t. User’s card ID (required)\n\t",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This permission is needed by MoneyBlinks to recomended you address in the onbording",
+        "NSFaceIDUsageDescription": "Authorization of transactions"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/android-icon.png",
+        "backgroundImage": "./assets/images/android-icon-bg.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "icon": "./assets/images/android-icon.png",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 2,
+      "useNextNotificationsApi": true,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAgq4u8ewnN5_w6TrmKtFHYMtUJgha9pd8"
+        }
+      },
+      "package": "com.moneyblinks.WalletApp"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pc-api-9105230212071103246-86",
+  "private_key_id": "a09d2ec061aec0d0f2f16b72ef78ead81ebd05b1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDnPDa/yMSGcifU\nfi/n0HwSnlHCYR6aXz1VBp75KKpnlP8oCwsio4Eu7apUYnNgwZIgQ6bBPigs/ZjB\nfPsmjjvUTj4UqXkckMhWsW4jWSPFNggDj5bZ6OtVUEY9izFV2lMRxtkKk5TETsEE\nwpiRKceLZBVmfafqgdNdEuqiSzrrTcPd8+lS4fwzZklSRAaHPYHb3yxveXLLuLU4\nGE9gs+abVjtJWSVDFVI3n/1I4I9kxXu5UXV5ZFkhXU2oLgFyYCQ9Bu2O3crYxbLC\n5oFPhizw1aGJO1hP/E0LoWgC2PEm7PiANSFnb4FZZQH5YIWhlZjNu9sVEJmYlsZl\nwIeuSsRbAgMBAAECggEAHDZgh627LJwo9+gdeC8btDnUx96JmVQda45PPx8TC2hG\naWBPj35beJpOudT5NsjnR0B5zAIFbNfUF2dkTSP1cMXLFUJIIJAZoVoskeuCTcF1\n4NlYEmY0sEgHCeM9tbfZgsW8HWo8MGdbbXVAoBV03zDq24JhRl9opmZ0cjCzk5nB\n9l4e+B2eRWDNPHm8eoPJ+joFDIapCl1FKN2G26U9r+u0GUUwcXeaLSncnRHMn4MP\nnvS8oXvwbcHykddj/DMQujUAbb6GuZzOxvHvq/W4H3ozgP4FXSz/lFS3iCia4hDb\nHS/RWpDKWAZOrmJJBSyr5WtbU3VfVsu/eBeSW4O+gQKBgQD4DYw1ziwfPQMDqEzV\nnVnHE5NK0CdPcn0Wov94kfcef197FggDkWw8z59OQg+9lOLGk9E6O5sbyvh0e4vZ\n9xbGijQy9gtCfqBmCdVUCrBpRSEmvNsMZa8eQmQ2ngSdmebwtG8mx0pe5k9eHXLx\nF7auPFdiHtg/i1wl7ORX7MioiwKBgQDupLuKVpaqyyG/aXRHceKPsDhwVQ2S3ApU\nfjcy+eRPkFRdbpG/xJzNBotyviBLC/UtNLqkT5GZO6438tBTrUMPqrMkCKffTZxC\nOsXrYh39Y6iaMymqc8RCFMmONlZ4WQm034eHzcuWtKHpYC/vvMk9OvkhiDDVoMm6\n28GZT1X9cQKBgF3pYygLwpChHL8JvO0zAYZpVt6AKCHgCpPDak1Pleup9ZA4KxiO\nuhfb00hhomv4LlNYK2KMppDDK4WOMMh4z9qjAFg65tBp+HgpSObklR2F2qM75QKw\njLg8EozLDpxMZC7FYT+hO/rp3yqWo6m7fKJCniK74stMC7sgEONo9h85AoGAL9u7\nfI/G4XOhTfjBB/7v168YcnasJTKZo744JbH1tnsUYDRnaFTuuTNBzf4RDdvVDH7R\nm1gVs+xDERdR7iYGF+M8z9IokGDJIIMW5BCmQQW2b04pYfSbfEEc9rcw+iupBav6\nSyLbXFrXSa0vj92FYhEsmyvr1zvKmP2vQqalcRECgYA9AzxDvI63xdTG7MykNG34\nwzdYCgYaRybLBcGEKR1ZuX5xKNJT55zooNRQpQ0ReyPzPJyJQ18hQSSJg1xtiKQy\nQ+R8b8rQ6zX/XVGwNhdMxWATBGagIyd2c254sQINDuSjVdozCUBLFMKEPp04sq8l\nibaRHbZ9jLDJOKxDM4q0+w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "moneyblinks-wallet-lastversion@pc-api-9105230212071103246-86.iam.gserviceaccount.com",
+  "client_id": "100052814649907583927",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/moneyblinks-wallet-lastversion%40pc-api-9105230212071103246-86.iam.gserviceaccount.com"
+}

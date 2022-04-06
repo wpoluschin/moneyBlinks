@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>929039398336-rsouu0qbb3sg9cpbof5b9pj5fdr8i40g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.929039398336-rsouu0qbb3sg9cpbof5b9pj5fdr8i40g</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>929039398336-p32893pk7r9kk9gd178jld6tvbbn6cgg.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAdwWK7qukC1zSkp92dNPdO9nF51RRkcKM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>929039398336</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.moneyblinks.WalletApp</string>
+	<key>PROJECT_ID</key>
+	<string>moneyblinkswallet</string>
+	<key>STORAGE_BUCKET</key>
+	<string>moneyblinkswallet.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:929039398336:ios:597fee1cb2426d44694425</string>
+</dict>
+</plist>
