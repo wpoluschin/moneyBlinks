@@ -253,6 +253,7 @@ export default function HomeBlinkStates({ children }) {
             },
           })
         );
+        //cambios
         console.log("pagos para descargar dinero", payload);
         let tempPaymentsMethod = payload.filter((payment:any) => payment.paymentMethod.code != "IOSWALLET");
         console.log(
